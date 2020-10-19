@@ -193,6 +193,10 @@ input {
     margin-right: 25px;
 }
 
+.filters-menu--wrapper:hover {
+    -webkit-box-shadow: inset 15px 15px 25px -20px rgba(123, 146, 181, 0.7);
+}
+
 .filters-menu--content {
     padding-left: 12px;
 }
@@ -203,10 +207,6 @@ input {
     padding: 12px;
     border-radius: 50%;
     vertical-align: middle;
-}
-
-.icon-filter:hover {
-    -webkit-box-shadow: inset 15px 15px 25px -20px rgba(123, 146, 181, 0.7);
 }
 
 .fa-info {
