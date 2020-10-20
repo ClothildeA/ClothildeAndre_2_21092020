@@ -555,7 +555,7 @@ input {
 
     .head-banner--suscribe {
         color: #0065FC;
-        padding: 20px;
+        padding: 0;
     }
 
     .nav-menu {
@@ -857,7 +857,6 @@ input {
 @media all and (max-width: 766px) {
 
     .head-banner--suscribe-wrapper {
-        padding: 10px;
         align-items: center;
     }
 
