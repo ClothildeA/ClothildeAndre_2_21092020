@@ -59,11 +59,20 @@ a {
 
 .header {
     display: flex;
-    display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1260px;
     margin: 0 auto;
+}
+
+.head-banner {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    }
+
+.head-banner--logo-wrapper {
+    width: 75%;
 }
 
 .head-banner--logo {
@@ -72,7 +81,11 @@ a {
     height: 43px;
 }
 
-.suscribe {
+.head-banner--suscribe-wrapper {
+    order: 1;
+    }
+
+.head-banner--suscribe {
     color: #0065FC;
 }
 
@@ -80,24 +93,17 @@ h1 {
     font-size: 1.4em;
 }
 
-.head-banner p {
-    font-size: 1em;
-}
-
 /* Navigation */
-
-.nav-menu-mobile {
-    display: none;
-}
 
 nav ul {
     display: flex;
-    margin: 0 0 110px 0;
+    margin: 0;
 }
 
-nav li {
+nav li, .head-banner--suscribe-wrapper {
     margin: 0;
     padding: 35px;
+    height: fit-content;
 }
 
 nav a {
@@ -119,11 +125,15 @@ nav li:hover a {
     color: #0065FC;
 }
 
-.head-banner--suscribe-wrapper {
-    display: none;
+/*Search bar*/
+
+.head-banner p {
+    font-size: 1em;
 }
 
-/*Search bar*/
+.head-banner--text {
+    margin-bottom: 20px;
+}
 
 .search-filter {
     max-width: 1260px;
@@ -528,25 +538,27 @@ input {
         width: 100%;
     }
 
+    .head-banner--logo-wrapper {
+        width: 50%;
+    }
+
     .head-banner--logo {
         margin: 25px;
     }
 
-    .head-banner--suscribe {
-        color: #0065FC;
-    }
-
     .head-banner--suscribe-wrapper {
         display: flex;
-        align-items: center;
-        margin: 25px;
+        justify-content: flex-end;
+        margin: 0;
+        order: 0;
     }
 
-    .nav-menu-desktop {
-        display: none;
+    .head-banner--suscribe {
+        color: #0065FC;
+        padding: 20px;
     }
 
-    .nav-menu-mobile {
+    .nav-menu {
         display: flex;
         flex-basis: 100%;
         justify-content: center;
@@ -576,11 +588,6 @@ input {
         border-top: none;
     }
 
-    .head-banner--text {
-        flex-basis: 100%;
-        margin: 0 20px;
-    }
-
     .icons {
         min-width: 20px;
         min-height: 20px;
@@ -589,6 +596,12 @@ input {
 
 
     /*Search bar*/
+
+    .head-banner--text {
+        flex-basis: 100%;
+        margin: 0;
+    }
+
     .search-filter {
         margin: 0 20px;
     }
@@ -842,6 +855,11 @@ input {
 /*Responsive Mobile*/
 
 @media all and (max-width: 766px) {
+
+    .head-banner--suscribe-wrapper {
+        padding: 10px;
+        align-items: center;
+    }
 
     .search {
         width: 65%;
